@@ -1,5 +1,7 @@
-﻿using Dotnet.Design.Patterns.Services.Taxes;
+﻿using Dotnet.Design.Patterns.Domain;
 using Dotnet.Design.Patterns.Services;
+using Dotnet.Design.Patterns.Services.Investments;
+using Dotnet.Design.Patterns.Services.Taxes;
 
 namespace Dotnet.Design.Patterns
 {
@@ -7,16 +9,16 @@ namespace Dotnet.Design.Patterns
     {
         static void Main(string[] args)
         {
-            var icms = new ICMS();
-            var iss = new ISS();
-            var iccc = new ICCC();
-            var budget = new Budget(5000);
+            var conservative = new Conservative();
+            var moderate = new Moderate();
+            var bold = new Bold();
 
-            var taxCalculator = new TaxCalculator();
+            var budget = new Budget(100_000);
+            var calculator = new InvestimentPerformer();
 
-            taxCalculator.Perform(budget, icms);
-            taxCalculator.Perform(budget, iss);
-            taxCalculator.Perform(budget, iccc);
+            calculator.Perform(budget, conservative);
+            calculator.Perform(budget, moderate);
+            calculator.Perform(budget, bold);
         }
     }
 }

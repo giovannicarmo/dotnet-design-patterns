@@ -1,4 +1,4 @@
-namespace Dotnet.Design.Patterns
+namespace Dotnet.Design.Patterns.Domain
 {
     public class Budget
     {

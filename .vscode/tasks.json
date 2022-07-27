@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/dotnet-design-partners.csproj",
+        "${workspaceFolder}/dotnet-design-patterns.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/dotnet-design-partners.csproj",
+        "${workspaceFolder}/dotnet-design-patterns.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -33,7 +33,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/dotnet-design-partners.csproj"
+        "${workspaceFolder}/dotnet-design-patterns.csproj"
       ],
       "problemMatcher": "$msCompile"
     }

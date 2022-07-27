@@ -1,3 +1,5 @@
+using Dotnet.Design.Patterns.Domain;
+
 namespace Dotnet.Design.Patterns.Services.Taxes
 {
   public class ICCC : Tax

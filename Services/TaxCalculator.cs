@@ -1,4 +1,5 @@
 using System;
+using Dotnet.Design.Patterns.Domain;
 using Dotnet.Design.Patterns.Services.Taxes;
 
 namespace Dotnet.Design.Patterns.Services
