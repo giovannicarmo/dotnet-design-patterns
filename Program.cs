@@ -13,12 +13,13 @@ namespace Dotnet.Design.Patterns
             var moderate = new Moderate();
             var bold = new Bold();
 
-            var budget = new Budget(100_000);
+            var account = new Account();
+            account.Deposit(100_000);
             var calculator = new InvestimentPerformer();
 
-            calculator.Perform(budget, conservative);
-            calculator.Perform(budget, moderate);
-            calculator.Perform(budget, bold);
+            calculator.Perform(account, conservative);
+            calculator.Perform(account, moderate);
+            calculator.Perform(account, bold);
         }
     }
 }

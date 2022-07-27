@@ -5,28 +5,23 @@ namespace Dotnet.Design.Patterns.Services.Investments
 {
   public class Bold : Investment
   {
-    public double Calculate(Budget budget)
+    public double Calculate(Account account)
     {
       double profit;
-      var probability = new Random().Next(101);
+      var probability = new Random().Next(10);
 
-      if (probability > 50)
+      if (probability < 2)
+      {
+        profit = 0.05;
+      } else if (probability >= 2 && probability <= 4)
+      {
+          profit = 0.03;
+      } else
       {
         profit = 0.006;
       }
-      else
-      {
-        if (probability > 30)
-        {
-          profit = 0.03;
-        }
-        else
-        {
-          profit = 0.05;
-        }
-      }
 
-      return budget.Amount + (budget.Amount * profit);
+      return account.Amount + (account.Amount * profit);
     }
   }
 }

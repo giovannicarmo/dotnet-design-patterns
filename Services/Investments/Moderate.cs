@@ -5,9 +5,9 @@ namespace Dotnet.Design.Patterns.Services.Investments
 {
   public class Moderate : Investment
   {
-    public double Calculate(Budget budget)
+    public double Calculate(Account account)
     {
-      return budget.Amount + (budget.Amount * (new Random().Next(101) > 50 ? 0.025 : 0.007));
+      return account.Amount + (account.Amount * (new Random().Next(2) == 0 ? 0.025 : 0.007));
     }
   }
 }

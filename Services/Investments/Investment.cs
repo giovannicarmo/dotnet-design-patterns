@@ -4,6 +4,6 @@ namespace Dotnet.Design.Patterns.Services.Investments
 {
     public interface Investment
     {
-        public double Calculate(Budget budget);
+        public double Calculate(Account account);
     }
 }
