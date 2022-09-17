@@ -44,9 +44,9 @@ namespace Dotnet.Design.Patterns
 
       budget2.AddItems(new Item("Pen", 2.50));
       budget2.AddItems(new Item("Pencil", 2));
-      budget2.AddItems(new Item("Freezer", 1200.81));
-      budget2.AddItems(new Item("Stove", 789.90));
-      budget2.AddItems(new Item("PS5", 4499.90));
+      // budget2.AddItems(new Item("Freezer", 1200.81));
+      // budget2.AddItems(new Item("Stove", 789.90));
+      // budget2.AddItems(new Item("PS5", 4499.90));
 
       budget2.Amount = budget2.Items.Sum(i => i.Price);
 
