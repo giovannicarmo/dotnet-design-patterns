@@ -3,7 +3,7 @@ using Dotnet.Design.Patterns.Domain;
 
 namespace Dotnet.Design.Patterns.Services.Investments
 {
-  public class Bold : Investment
+  public class Bold : IInvestment
   {
     public double Calculate(Account account)
     {

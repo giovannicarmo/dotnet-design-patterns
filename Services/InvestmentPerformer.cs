@@ -6,7 +6,7 @@ namespace Dotnet.Design.Patterns.Services
 {
     public class InvestimentPerformer
     {
-        public void Perform(Account account, Investment investiment)
+        public void Perform(Account account, IInvestment investiment)
         {
             var result = investiment.Calculate(account);
             Console.WriteLine($"{investiment.ToString()}: {result}");

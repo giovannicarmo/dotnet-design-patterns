@@ -2,7 +2,7 @@ using Dotnet.Design.Patterns.Domain;
 
 namespace Dotnet.Design.Patterns.Services.Investments
 {
-  public class Conservative : Investment
+  public class Conservative : IInvestment
   {
     public double Calculate(Account account)
     {
