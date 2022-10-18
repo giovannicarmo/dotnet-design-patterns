@@ -1,16 +1,14 @@
-using System;
-
 namespace Dotnet.Design.Patterns.Domain
 {
-    public class Item
-    {
-        public String Name { get; set; }
-        public double Cost { get; set; }
+  public class Item
+  {
+    public string Name { get; private set; }
+    public double Price { get; private set; }
 
-        public Item(String name, double cost)
-        {
-            this.Name = name;
-            this.Cost = cost;
-        }
+    public Item(string name, double price)
+    {
+      this.Name = name;
+      this.Price = price;
     }
+  }
 }
